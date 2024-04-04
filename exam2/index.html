@@ -1,17 +1,101 @@
 <html>
 <head>
     <title>MIS 3033 Exam 2 Spring 2024 [Exam Code] Alexandra Ablah</title>
-    <link rel="icon" href="static/img/head1.png"/>
-    <link rel="stylesheet"href="static/site.css"/>
+    <link rel="icon" href="static/img/head1.png" />
+    <link rel="stylesheet" href="static/site.css" />
 
     <style>
+        #maindiv {
+            width: 800px;
+        }
 
+        #header {
+            flex-direction: row;
+            align-content: end;
+            display: flex;
+            align-items: end;
+            justify-content: end;
+        }
+
+        #header2 {
+            display: flex;
+            flex-direction: row;
+            height: 80px;
+            align-content: center;
+            align-items: center;
+        }
+
+        #content1 {
+            width: 280px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #leftdiv {
+            width: 280px;
+        }
+
+        #rightdiv {
+            display: flex;
+            flex-direction: column;
+        }
+
+        #updiv {
+            width: 510px;
+            height: 110px;
+        }
+
+        #content2 {
+            display: flex;
+            flex-direction: row;
+        }
+
+        #downdiv {
+            /* display:flex;
+            flex-direction:row;*/
+        }
+
+        #footer {
+            height: 60px;
+            display:flex;
+            flex-direction:row;
+            justify-content:center;
+            align-content:end;
+            align-items:center;
+            width:800px;
+        }
+
+        .bstyle {
+            border-style: solid;
+            border-width: 1px;
+            border-color: lightgrey;
+            border-radius: 5px;
+        }
+
+        .tstyle {
+            text-transform: uppercase;
+            background-color: lightskyblue;
+            border-radius: 5px;
+        }
+
+        #totalcontent {
+            display: flex;
+            flex-direction: row;
+        }
+
+        #p {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+        }
     </style>
 
 </head>
 <body>
-    [Exam Code]
-    <img src="static/img/a.svg"style="height:50px;"/>
+
+    <!--<img src="static/img/a.svg"style="height:50px;"/>
     <img src="static/img/b.svg"style="height:50px;"/>
     <img src="static/img/css.svg"style="height:50px;"/>
     <img src="static/img/head1.png"style="height:50px;"/>
@@ -20,7 +104,104 @@
     <img src="static/img/javascript.svg"style="height:50px;"/>
     <img src="static/img/linkedin.png"style="height:50px;"/>
     <img src="static/img/logo.svg"style="height:50px;"/>
-    <img src="static/img/sqlite.svg"style="height:50px;"/>
+    <img src="static/img/sqlite.svg"style="height:50px;"/>-->
+
+    <div id="maindiv">
+
+        <div id="header">
+            <div style="width:200px;height:70px;justify-content:center;align-content:center;display:flex;align-items:center;" class="bstyle">
+                MIS 3033 Exam 2
+                <br />
+                Alexandra Ablah
+            </div>
+            <div style="width: 200px; height: 70px; justify-content: center; align-content: center; display: flex; align-items: center;" class="bstyle">
+                [YMBB]
+            </div>
+        </div>
+        <div class="bstyle" id="header2">
+            <img src="static/img/head1.png" style="height:60px;border-radius:30px;" />
+            <div>
+                Alexandra Ablah<br />
+                MIS Student
+            </div>
+            <div>
+                <a href="https://linkedin.com/" target="_blank"><img src="static/img/linkedin.png" style="width:30px;" /></a> 
+            </div>
+        </div>
+        <div id="totalcontent">
+            <div class="bstyle" id="content1">
+                <div id="leftdiv">
+                    <span class="tstyle">Recent News:</span>
+                    <ul>
+                        <li>Learned C#</li>
+                        <li>Learned Entity Framework</li>
+
+                        <li>Learned <img src="static/img/sqlite.svg" style="height:50px;" /></li>
+
+                    </ul>
+                </div>
+
+            </div>
+            <div id="content2">
+                <div id="rightdiv">
+                    <div class="bstyle" id="updiv">
+                        <span class="tstyle">About Me:<br /></span>
+                        I am a MIS student. I like programming and am good at C#. I learned entity framework to Database Manipulations. I know HTML, CSS, and I started to learn JavaScript. It is fun. Later I will learn C# .NET MVC dynamic web app development and Web API development.
+                    </div>
+                    <div class="bstyle" id="downdiv">
+                        <span class="tstyle"> Achievements</span>
+
+
+                        <div id="p">
+                            <div class="bstyle">
+                                <img src="static/img/html.svg" style="height:100px;" /><br />
+
+                                <span style="display:flex;flex-direction:column;align-items:center;">HTML</span>
+                            </div>
+
+
+
+                            <div class="bstyle">
+                                <img src="static/img/css.svg" style="height:100px;" /><br />
+
+                                <span style="display:flex;flex-direction:column;align-items:center;">CSS</span>
+                            </div>
+
+                            <div class="bstyle">
+                                <img src="static/img/javascript.svg" style="height:100px;" /><span style="display:flex;flex-direction:column;align-items:center;">JavaScript</span>
+                            </div>
+
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="bstyle" id="footer">
+
+            <div style="font-weight:bold;font-size:20px;color:grey;align-content:center;align-items:center;">
+                Developed By Alexandra Ablah for MIS 3033 Exam 2
+               
+            </div>
+            <div>
+                <img src="static/img/logo.svg" style="height:50px;" />
+            </div>
+
+            
+        </div>
+    </div>
 
 </body>
 </html>
+
+<!--display:flex;flex-direction:column;justify-content:center;align-content:center;align-items:center;"-->
+<!--style="display:flex;flex-direction:row;justify-content:end;align-content:end;align-items:end;"-->
